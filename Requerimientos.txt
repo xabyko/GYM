@@ -196,3 +196,4 @@ PANTALLA REGISTRO RUTINA
 - El EDECAN puede ver la PANTALLA REGISTRO RUTINA pero no se puede registrar
 - Solo se muestran rutinas aprobadas
 
+Requerimientos del sistema
