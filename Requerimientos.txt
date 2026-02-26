@@ -1,0 +1,196 @@
+LOGIN
+Login con los campos usuario y contraseña
+ - Campo Usuario .- es el numero de cedula
+ - Contraseña
+
+ROLES
+SUPER ADMINISTRADOR
+Tener acceso a las pantallas de:
+ - PANTALLA SUPER ADMINISTRADOR
+ - PANTALLA GIMNASIO
+ - PANTALLA USUARIO
+ - PANTALLA CLIENTE
+ADMINISTRADOR
+ - PANTALLA USUARIO
+ - PANTALLA CLIENTE
+ - PANTALLA APROBAR RUTINA
+ - PANTALLA REGISTRO RUTINA
+ - PANTALLA NOTICIAS
+ - PANTALLA NOVEDADES
+ - PANTALLA PERFIL
+ - PANTALLA ALERTAS
+ - PANTALLA DASBOARD
+ - PANTALLA ADMINSTRACION
+EDECAN
+ - PANTALLA CLIENTE
+ - PANTALLA APROBAR RUTINA
+ - PANTALLA REGISTRO RUTINA
+ - PANTALLA NOTICIAS
+ - PANTALLA NOVEDADES
+ - PANTALLA PERFIL
+ - PANTALLA ALERTAS
+ENTRENADOR
+ - PANTALLA RUTINA
+ - PANTALLA NOVEDADES
+ - PANTALLA PERFIL
+CLIENTE
+ - PANTALLA REGISTRO RUTINA
+ - PANTALLA NOVEDADES
+ - PANTALLA PERFIL
+ 
+PANTALLAS
+PANTALLA SUPER ADMINISTRADOR para crear, editar, desactivar un SUPER ADMINISTRADOR que contenga los campos
+ - Nombres
+ - Apellidos
+ - CI
+ - Contraseña
+ - Confirmacion de contraseña
+ - Se debe visualizar en una lista todos los SUPER ADMINISTRADOR  y debe tener una colimna de acciones para editar o desactivar
+	debe existir un boton para crear un nuevo.
+PANTALLA GIMNASIO para crear, editar, desactivar un GIMNASIO que contenga los campos
+ - Nombre del gimnasio
+ - Nombre del propietario
+ - Ruc o CI 
+ - Correo Electrónico
+ - Dirección
+ - Logotipo del gimnasio
+ - Telefono 1 
+ - Telefono 2
+ - Se debe visualizar en una lista todos los GIMNASIO y debe tener una colimna de acciones para editar o desactivar
+	debe existir un boton para crear un nuevo.
+PANTALLA USUARIO para crear, editar o desactivar un USUARIO de gimnasio que contenga los campos
+ - Gimnasio .- si el usuario que esta usando el sistema pertenese a un gimacion el campo 
+	Gimnacio de seleccionarse automaticamente con el mismo gimnasio del usuario que esta utilizando
+	solo el Administrador general puede seleccionar el gimnasio
+ - Rol.- puede ser ADMINISTRADOR, EDECAN, ENTRENADOR
+ - Nombres
+ - Apellidos
+ - CI
+ - Telefono
+ - Correo
+ - Imagen
+ - Contraseña
+ - Confirmacion de contraseña
+ - Se debe visualizar en una lista todos los USUARIO y debe tener una colimna de acciones para editar o desactivar
+	debe existir un boton para crear un nuevo.
+PANTALLA CLIENTE para crear editar o desactivar un CLIENTE  que contenga los campos
+ - Gimnasio.- si el usuario que esta usando el sistema pertenese a un gimacion el campo 
+	Gimnacio de seleccionarse automaticamente con el mismo gimnasio del usuario que esta utilizando
+	solo el Administrador general puede seleccionar el gimnasio
+ - Primer Nombre
+ - Segundo Nombre
+ - Primer Apellido
+ - Segundo Apellido
+ - CI
+ - Telefono
+ - Contacto de emergencia
+	- Nombre Completo
+	- Parentesco
+	- Telefono Emergencia
+ - Correo Electronico 
+ - Peso
+ - Estatura
+ - IMC.- Es calculado mediante peso/Estatura
+ - Imagen
+ - Inicio Menbresia.- debe ser un campo de formato fecha  para seleccionar la fecha
+ - Fin Menbresia.- debe ser un campo de formato fecha  para seleccionar la fecha
+ - Membresia.- combo en el cual se seleccione la menbresia elejida or el cliente
+ - valor a pagar .- sale deacuerdo a la membresia que selecciones
+ - Contraseña
+ - Confirmacion de contraseña
+ - Se debe visualizar en una lista todos los CLIENTE y debe tener una colimna de acciones para editar o desactivar
+	debe existir un boton para crear un nuevo.
+PANTALLA RUTINA para crear, editar o eliminar RUTINA que contenga los campos
+ - Año.- se debe seleccionar un año
+ - Mes.- se debe seleccionar el mes
+ - Dia.- se debe seleccionar el dia
+ - Hora Inicio.- se debe seleccionar hora de inicio
+ - Hora fin.- se debe seleccionar hora de fin 
+ - Rutina.- campo para ingresar la rutina de la clases
+ - Imagen.- imagne de la rutina 
+ - Entrenador.- se debe guardar automaticamente el nombre del entrenador que esta creando la Rutina, este campo no es editable
+ - Estado .- puede ser en espera, rechazada, aprobada; este campo no es editable 
+ - Se debe visualizar en una lista todas las RUTINA y debe tener una colimna de acciones para editar o eliminar
+	debe existir un boton para crear una nueva.
+PANTALLA APROBAR RUTINA
+ - Deben aparecer las rutinas creadas por los entrenadores y tener un check para aprobarlas o rechasarlas 
+ - Debe guardar el usuario que aprobo la rutina y aparecer en la lista al final de la fila
+PANTALLA REGISTRO RUTINA
+ - Pantalla en la que se muestren las rutinas aprobadas para que el usuario pueda registrarse o quitar el registro 
+PANTALLA NOTICIAS para crear, editar o desactivar una NOTICIAS que contenga los campos
+ - Titulo
+ - Imagen
+ - Descripción
+ - Estado.- Activado, desactivado
+ - Se debe visualizar en una lista todas las NOTICIAS y debe tener una colimna de acciones para editar o desactivar
+	debe existir un boton para crear una nueva.
+PANTALLA NOVEDADES
+ - Se puede visualizar de manera amigable y atractiva todas las NOTICIAS que esten activas
+PANTALLA PERFIL
+ - El usuario puede visualizar su informacion personal como
+    - Gimnasio.- no editable
+	- Primer Nombre .- editable
+	- Segundo Nombre .- editable
+	- Primer Apellido .- editable 
+	- Segundo Apellido .- editable
+	- CI.- no editable
+	- Telefono .-  editable
+	- Contacto de emergencia .- no editable
+		- Nombre Completo
+		- Parentesco
+		- Telefono Emergencia
+	- Correo Electronico .- editable
+	- Peso .- editable
+	- Estatura .- editable
+	- IMC.- Es calculado mediante peso/Estatura .- no editable
+	- Imagen .- editable
+	- Inicio Menbresia .-  no editable
+	- Fin Menbresia.- no editable
+	- Membresia.- no editable
+	- valor a pagar .- no editable
+	- Contraseña .- editable
+	- Confirmacion de contraseña .- editable
+ - Puede visualizar su imagen y puede cambiarla
+ - El usuario puede modificar su peso y visualizar un historial de las modificaciones que a realizado.
+PANTALLA ALERTAS
+ - Las alertas deben ser generasas automaticamente
+ - Se debe mostrar como alertas a los clientes que este por caducar su membresia
+ - Debe presentar alertas cuando no exista rutinas creadas destro de los 5 dias proximos
+PANTALLA DASBOARD
+ - Pestaña dentro de la pantalla que muestre un dasboar con los clientes que tiene el gimnacio al que este registrado el usuario.
+ - Pestaña dentro de la pantalla que muestre el valor recaudado en el mes por las membresias 
+ - Pestaña dentro de la pantalla que muestre el numero de clientes que tiene porf fechas 
+
+PANTALLA ADMINSTRACION
+ - Pestaña dentro de la pantalla ADMINSTRACION en la cual pueda registrar membresias y tipos de menbresias con sus campos
+  - nombre
+  - meses
+  - costo
+  - descuento
+
+REGLAS DE NEGOCIO
+PANTALLA CLIENTE 
+- Cuando pasa la fecha de fin de menbresia automaticamente el cliente se debe desactivar.
+LOGIN 
+- Solo debe permitir ingresar a SUPER ADMINISTRADOR que se encuentren activos
+- Solo debe permitir ingresar a ADMINISTRADOR que se encuentren activos
+- Solo debe permitir ingresar a EDECAN  que se encuentren activos
+- Solo debe permitir ingresar a ENTRENADOR  que se encuentren activos
+PANTALLA GIMNASIO
+- Si un gimnasio esta desactivado todos los ADMINISTRADOR,EDECAN, ENTRENADOR se deben desactivar automaticamente
+PANTALLA RUTINA
+- Un entrenados no puede crear dos rutinas en horarios que interfieran, si hace esto debe mostrar el mensaje no se puede crear rutinas en el mismo horario
+- Rutina debe ser aprobada por el ADMINISTRADOR O EDECAN
+- Una rutina aprobada no puede ser eliminada o desactibada
+PANTALLA USUARIO 
+- Solo el administrador general puede seleccionar los gimnacion
+- Si el usuario que esta usando el sistema pertenese a un gimacion el campo 
+	Gimnacio de seleccionarse automaticamente con el mismo gimnasio del usuario que esta utilizando y no se puede modificar
+PANTALLA CLIENTE
+-Si el usuario que esta usando el sistema pertenese a un gimacion el campo 
+	Gimnacio de seleccionarse automaticamente con el mismo gimnasio del usuario que esta utilizando y no se puede modificar
+PANTALLA REGISTRO RUTINA
+- El ADMINISTRADOR puede ver la PANTALLA REGISTRO RUTINA pero no se puede registrar
+- El EDECAN puede ver la PANTALLA REGISTRO RUTINA pero no se puede registrar
+- Solo se muestran rutinas aprobadas
+
