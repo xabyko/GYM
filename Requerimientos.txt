@@ -4,6 +4,7 @@ LOGIN
 Login con los campos usuario y contraseña
  - Campo Usuario .- es el numero de cedula
  - Contraseña
+ - Recuperar Contraseña
 
 ROLES
 SUPER ADMINISTRADOR
@@ -178,6 +179,10 @@ LOGIN
 - Solo debe permitir ingresar a ADMINISTRADOR que se encuentren activos
 - Solo debe permitir ingresar a EDECAN  que se encuentren activos
 - Solo debe permitir ingresar a ENTRENADOR  que se encuentren activos
+- Solo debe permitir ingresar a CLIENTES  que se encuentren activos
+- El usuario debe ser la cedula, u el campo solo debe permitir el ingreso de numeros.
+- La contraseña debe ser alfanumerica, una letra mayuscula, letra minuscula, numero.
+- El numero de intentos de ingreso debe ser hasta tres si sobrepasa se desactiva la cuenta 
 PANTALLA GIMNASIO
 - Si un gimnasio esta desactivado todos los ADMINISTRADOR,EDECAN, ENTRENADOR se deben desactivar automaticamente
 PANTALLA RUTINA
@@ -196,4 +201,14 @@ PANTALLA REGISTRO RUTINA
 - El EDECAN puede ver la PANTALLA REGISTRO RUTINA pero no se puede registrar
 - Solo se muestran rutinas aprobadas
 
-Requerimientos del sistema
+REQUERIMIENTOS DEL SISTEMA 
+- .NET Core 10
+- Angular 21
+- Angular material
+- Seguridad JWT
+- Arquitectura exagonal Simple
+- Entity Framework
+- base de datos SQL Server.- 
+	Considerar buenas practicas 
+	- Utiliza CamelCase
+	- Utiliza nombres de las tablas en español
